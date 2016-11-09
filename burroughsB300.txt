@@ -1,0 +1,20 @@
+ The story of the Burroughs B300
+
+
+CSI’s penchant for being in the forefront of banking technology is rooted in its first computer purchase in its earliest days in the mid-1960s.
+
+The Burroughs B300, which remains on the ground floor of the company’s Paducah headquarters, allowed local bankers, for the first time, to streamline processing of checks and deposit slips. The Burroughs’ features are a testament to how far computer technology has come.
+
+The original cost of the Burroughs B300 was $321,400, and it could process 50,000 items in three hours along with nearly 3,000 statements in an hour.
+
+Other features:
+
+• It featured no screen or monitor as the operator used lights to determine the status of the system.
+
+• It came with 9,600 bytes of memory and later upgraded to 19,200 bytes. For comparison, the iPhone has up to 32 gigabytes of memory, or 32 billion bytes, and costs a couple hundred dollars.
+
+• No disk drive, all data storage on tapes.
+
+• Operated a 1,565 DPM sorter for capturing check information.
+
+• De-installed from use in 1978. 
