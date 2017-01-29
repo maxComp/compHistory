@@ -183,6 +183,9 @@ background-image:url('dpweek49691.jpg');
 .image25 {
 background-image:url('nov251968.JPG');
 }
+.image26 {
+background-image:url('ronandnoahx.JPG');
+}
 button {
     background-color: newbinary.jpg;
     -moz-border-radius: 20px;
@@ -205,7 +208,7 @@ p {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
