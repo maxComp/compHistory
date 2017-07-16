@@ -1,0 +1,454 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>A HEXADECIMAL PRONUNCIATION GUIDE Robert A</title>
+</head>
+
+<body>
+
+<font SIZE="5">
+<p ALIGN="CENTER">A HEXADECIMAL PRONUNCIATION GUIDE<br>
+Robert A. Magnuson<br>
+Datamation January, 1968</p>
+</font><font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">Computers manipulate their own 
+internal physical states. These physical states, in turn, are represented by the 
+graphics &quot;0&quot; and &quot;1&quot;. Hence, it is said that computers process binary numbers. 
+Perhaps. it might be more accurate to say that they manipulate strings of 
+characters taken from a two-letter alphabet. When it is necessary to describe 
+the internal goings on, the strings are hardly ever written in binary because a 
+large array of zeroes and ones lacks perspicuity. Instead the binary numbers are 
+described in a coded form.</font></p>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">For computers such as the IBM 
+7090 having a character length of six bits and a word length of 36 bits, octal 
+coded binary is used, in which three bits are represented by one octal digit. 
+For computers such as the IBM System 360 having a character length of eight bits 
+and a word length of 32 bits, hexadecimal coded binary is used, in which four 
+bits are represented by one hexadecimal digit.</font></p>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">For example, suppose the 
+instruction stored at location<font SIZE="3"> </font>000000000010110001011110 is 
+01000111111100001100010100011010 (in a 360). Expressed hexadecimally, the instruction at 
+002C5E is 47F0C51A.</font></p>
+<font SIZE="2">
+<p ALIGN="JUSTIFY"></p>
+</font><font face="Times New Roman">
+<p ALIGN="JUSTIFY">The widespread use of the IBM System/360 and its hexadecimal 
+coding has introduced some new problems for the professional programmer. This 
+article identifies and solves three of these problems.</p>
+<p><b>hexadecimal and its problems</b></p>
+</font>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">The next generation of computers 
+is exemplified by the System 360. The character length is eight bits and the 
+word length is 32 bits. Octal coded binary, the old system of representing 
+binary numbers, is not used since octal coding requires a grouping of the bits 
+into threes, and 3 does not divide 8 or 32. Instead the grouping is in fours, 
+which means the binary numbers are represented by base sixteen numbers. This is 
+the hexadecimal coded binary system.</font></p>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">Base sixteen numeration requires 
+an alphabet of 16 digits. As usual with non decimal bases the digits are 
+borrowed from the decimal stock to the extent possible. There are six short in 
+this base. The decision adopted by IBM was to lift the letters A-F for the 
+remaining. hexadecimal digits. This decision is practically irrevocable because 
+the particular choice of graphics is now an integral part of the System: 360's 
+software assemblers, compilers, dumps, and utilities. Naturally enough, these 
+letters are pronounced the way they were learned in childhood viz, &quot;ay,&quot; &quot;bee,&quot; 
+&quot;see,&quot; &quot;dee,&quot; &quot;ee&quot; and &quot;ef:&quot;. Three problems arise from the particular choice of 
+graphics for hexadecimal:</font></p>
+<p><font face="Times New Roman">(a) The conflicting mental associations of the 
+six letters, in their dual roles.</font></p>
+<p><font face="Times New Roman">(b) The difficulties involved in pronouncing 
+hexadecimal numbers.</font></p>
+<p><font face="Times New Roman">(c) The difficulties involved in keypunching 
+hexadecimal numbers.</font></p>
+<b>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">naming the numbers</font></p>
+<font SIZE="4">
+<p ALIGN="JUSTIFY"></p>
+</font></b>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">Conflicting mental associations<i>.
+</i>Every 360 programmer must memorize the hexadecimal-binary-decimal digit 
+table shown in Table 1. The table was obtained by counting in parallel to the 
+largest single digit hexadecimal number.</font></p>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="center"><font face="Times New Roman">Table 1</font></p>
+<font SIZE="1">
+<p ALIGN="center"></p>
+</font>
+<p align="center"><font face="Times New Roman">Hexadecimal-Binary-Decimal Digit Conversion
+</font><i><font face="Times New Roman">&nbsp;</font></p>
+</i><font FACE="Times New Roman">
+<div align="center">
+  <center>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="25%" id="AutoNumber1">
+  <tr>
+    <td width="33%" align="center"><i><font face="Times New Roman">hex </font></i></td>
+    <td width="33%" align="center"><i><font face="Times New Roman">binary</font></i></td>
+    <td width="34%" align="center"><i><font face="Times New Roman">decimal</font></i></td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">0</td>
+    <td width="33%" align="center">0000</td>
+    <td width="34%" align="center">0</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">1</td>
+    <td width="33%" align="center">0001</td>
+    <td width="34%" align="center">1</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">2</td>
+    <td width="33%" align="center">0010</td>
+    <td width="34%" align="center">2</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">3</td>
+    <td width="33%" align="center">0011</td>
+    <td width="34%" align="center">3</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">4</td>
+    <td width="33%" align="center">0100</td>
+    <td width="34%" align="center">4</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">5</td>
+    <td width="33%" align="center">0101</td>
+    <td width="34%" align="center">5</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">6</td>
+    <td width="33%" align="center">0110</td>
+    <td width="34%" align="center">6</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">7</td>
+    <td width="33%" align="center">0111</td>
+    <td width="34%" align="center">7</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">8</td>
+    <td width="33%" align="center">1000</td>
+    <td width="34%" align="center">8</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">9</td>
+    <td width="33%" align="center">1001</td>
+    <td width="34%" align="center">9</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">A</td>
+    <td width="33%" align="center">1010</td>
+    <td width="34%" align="center">10</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">B</td>
+    <td width="33%" align="center">1011</td>
+    <td width="34%" align="center">11</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">C</td>
+    <td width="33%" align="center">1100</td>
+    <td width="34%" align="center">12</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">D</td>
+    <td width="33%" align="center">1101</td>
+    <td width="34%" align="center">13</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">E</td>
+    <td width="33%" align="center">1110</td>
+    <td width="34%" align="center">14</td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">F</td>
+    <td width="33%" align="center">1111</td>
+    <td width="34%" align="center">15</td>
+  </tr>
+</table>
+  </center>
+</div>
+</font><font FACE="Arial" SIZE="1">
+<p ALIGN="center"></p>
+</font><font face="Times New Roman">
+<p ALIGN="JUSTIFY">The problem of the mental association occurs because the 
+digits A-F are off by one in their values, The first through sixth letters of 
+the alphabet stand for ten through fifteen. Consider, for example, the graphic D 
+sometimes a letter, sometimes a digit. The programmer must know that D stands 
+for 1101 which, of course, is 13. If he wants to load Base Register 13, he 
+writes &quot;BALR 13,0&quot; in assembly language, and he writes &quot;05D0&quot; in machine 
+language. Thirteen, an odd number, is associated with its unit digit 3, and, as 
+previously seen, with the digit D. However, D is the fourth letter of the 
+alphabet, and has a card code of 12-4 (and 4 is an even number). The situation 
+is similar for the other hexadecimal digit letters.</font></p>
+<i>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">Pronunciation difficulties.
+</font></i><font face="Times New Roman">The 360 programmer spends a great deal 
+of time writing, reading, comparing, and checking hexadecimal numbers. It is a 
+regular part of his job to prepare programs, read dumps, make hexadecimal 
+patches, and check all of these. There seems to be an irresistible tendency to 
+pronounce strings of digits decimally even though some other base is involved. 
+The hexadecimal number 12 is pronounced as &quot;twelve&quot; even though it really stands
+<i>for </i>18 because it is easier to say &quot;twelve&quot; than &quot;one two.&quot; For some 
+obscure psychological reason, it is much more efficient to pronounce numbers 
+than to spell them whether they are decimal or otherwise.</font></p>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">No problem arose with the use of 
+octal since all octal digits are also decimal digits. However with hexadecimal 
+usage there is the problem of the six nondecimal hexadecimal digits. Just as 29 
+is pronounced as &quot;twenty-nine,&quot; we tend to pronounce its successor 2A as 
+&quot;twenty-ay.&quot; Unfortunately this sounds much like &quot;twenty-eight.&quot; Whereas C4 may 
+be pronounced &quot;seety-four,&quot; to pronounce A4 as &quot;ayty-four&quot; is to invite 
+disaster. How does one distinguish between lA, &quot;ayteen&quot; and 18, &quot;eighteen?&quot; And 
+what about 88, 8A, A8, and AA?</font></p>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="JUSTIFY"><font face="Times New Roman"><i>Keypunching difficulties. </i>
+The third problem results from the physical layout of the keyboard on the model 
+29 keypunch. The existence of this problem is difficult to<i> </i>understand 
+since the new model 29 keypunch was designed for use in conjunction with the 
+360. Nonetheless the following problem does exist. Keyboarding <i>&quot;0&quot; </i>
+through &quot;9,&quot; 10 of the 16 hexadecimal digits, requires the simultaneous 
+depression of the NUMERIC key; keyboarding &quot;A&quot; through &quot;F,&quot; 6 of the 16 
+hexadecimal digits, requires that the NUMERIC key not be depressed. But 
+hexadecimal numbers contain a random mixture of the 0's through 9's and the A's 
+through F's. Hence, extreme difficulty is experienced in coordinating the use of 
+the NUMERIC key when keyboarding hex. For example, if a &quot;2&quot; is desired and it is 
+struck without the NUMERIC key all the way down, an &quot;I&quot; is obtained. Conversely, 
+if a &quot;D&quot; is desired and it is struck with the NUMERIC key still down, a colon is 
+obtained. IBM needs to put a HEXADECIMAL key on the model 29 keypunch, Holding 
+down this new key would select only the hexadecimal digits and would lock the 
+keyboard upon depressing a key other than any of the 16 hexadecimal digits.</font></p>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="JUSTIFY"><b><font face="Times New Roman">solutions to the problems</font></b></p>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">The following system 
+accomplishes the integration of the six maverick hexadecimal digits into the 
+familiar decimal system of pronouncing numbers. Each of the six new digits is 
+given a new pronunciation as shown in Table 2. These carefully chosen names are 
+easy to remember, suggestive of the proper letter, and capable of euphonious 
+modification for<i> </i>the -teen and -ty number words.</font></p>
+<p ALIGN="center"><font face="Times New Roman">Table 2</font></p>
+<p ALIGN="center"><font face="Times New Roman">&nbsp;New Names for 
+Hexadecimal Digits</font></p>
+<div align="center">
+  <center>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="25%" id="AutoNumber2">
+  <tr>
+    <td width="50%" align="center">A</td>
+    <td width="50%" align="center">ann</td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">B</td>
+    <td width="50%" align="center">bet</td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">C</td>
+    <td width="50%" align="center">chris</td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">D</td>
+    <td width="50%" align="center">dot</td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">E</td>
+    <td width="50%" align="center">ernest</td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">F</td>
+    <td width="50%" align="center">frost</td>
+  </tr>
+</table>
+  </center>
+</div>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">The pronunciation of the -teen's 
+and -ty's for the new digits is shown in Table 3. Note that the analog of the 
+decimal pronunciation system has been used. The new name for each new digit has 
+been chosen so that at least one of the -teen and -ty modifications is familiar 
+sounding.</font></p>
+<p ALIGN="center"><font face="Times New Roman">Table 3</font></p>
+<p ALIGN="center"><font face="Times New Roman">&nbsp;-Teen and - Ty<i> </i>
+Pronunciation for the New Digits</font></p>
+<div align="center">
+  <center>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="25%" id="AutoNumber3">
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">lA </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">annteen</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">1B  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">betteen</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">1C  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">christeen</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">1D  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">dotteen</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">1E  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">ernesteen</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">1F  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">frosteen</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">A0  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">annty</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">B0</font></td>
+    <td width="50%" align="center"><font face="Times New Roman">&nbsp;betty</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">C0 </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">christy </font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">D0 </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">dotty</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">E0 </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">ernesty </font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">F0 </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">frosty</font></td>
+  </tr>
+</table>
+  </center>
+</div>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">Now 29's successor 2A can be 
+pronounced &quot;twentyann&quot; without the slightest tendency to confuse it with 28. The 
+pronunciation of C4 is &quot;christy-four&quot; and that of A4 is &quot;annty-four.&quot; There is 
+no problem in distinguishing between lA, &quot;annteen&quot; and 18, &quot;eighteen.&quot; And 88, 
+8A, A8. and AA are easily distinguished when pronounced &quot;eighty-eight,&quot; &quot;eighty-ann&quot;,&quot; 
+&quot;annty-eight,&quot; and &quot;anntyann.&quot;</font></p>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">Some two-digit hex numbers, each 
+representing one byte, appear with their new pronunciation in Table 4.</font></p>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="center"><font face="Times New Roman">Table 4</font></p>
+<font SIZE="2">
+<p ALIGN="center"></p>
+</font><font face="Times New Roman">
+<p align="center">One-Byte Strings with Pronunciation</p>
+<div align="center">
+  <center>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="25%" id="AutoNumber4">
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">2F </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">twenty-frost</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">F2 </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">frosty-two</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">5B </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">fifty-bet</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">3E  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">thirty-ernest</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">AF  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">annty-frost</font></td>
+  </tr>
+</table>
+  </center>
+</div>
+<p>Some four-digit hex numbers, each representing two bytes, appear with their 
+new pronunciations in Table 5.</p>
+</font>
+<p ALIGN="center"><font face="Times New Roman">Table 5</font></p>
+<font SIZE="2">
+<p ALIGN="center"></p>
+</font>
+<p ALIGN="center"><font face="Times New Roman">Two-Byte Strings with 
+Pronunciation</font></p>
+<div align="center">
+  <center>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="35%" id="AutoNumber5">
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">A01C  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">annty christeen</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">1ED0  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">ernesteen dotty</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">A007  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">annty oh-seven</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font FACE="Times New Roman">DEAF  </font></td>
+    <td width="50%" align="center"><font FACE="Times New Roman">dotty-ernest annty-frost</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">3A7D  </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">thirty-ann seventy-dot</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font face="Times New Roman">47F0 </font></td>
+    <td width="50%" align="center"><font face="Times New Roman">forty-seven 
+    frosty</font></td>
+  </tr>
+</table>
+  </center>
+</div>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">The problem of the values of the 
+added digits being off by one is now easily solved. Merely remember the &quot;ages&quot;<i> 
+of&nbsp; </i>these new-found friends. Learn that ann is 10<i>, </i>bet is 11, 
+etc. without becoming confused with the fact that ay is associated with 1, bee 
+with 2, etc.</font></p>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">The problems of some of the hex 
+digits being NUMERIC and the others ALPHA on the model 29 keypunch is solved in 
+the following fashion, Select a particular finger of the left hand, say, the 
+little finger. No other finger of the left hand is to be used. The home position 
+of that left little finger is on the NUMERIC key. The right hand is used for 
+typing 0-9 and the (numeric) comma while the left little finger holds down the 
+NUMERIC key. When A - F arise, they are typed with the left little finger-thus 
+ensuring that the NUMERIC key is not depressed. Return the left finger to the 
+home position on the NUMERIC key immediately upon finishing A-F.</font></p>
+<font SIZE="1">
+<p ALIGN="JUSTIFY"></p>
+</font>
+<p ALIGN="JUSTIFY"><b><font face="Times New Roman">the proposed system in use</font></b></p>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">The errors and confusion, 
+previously mentioned, that result from the common current usage of hex with the 
+System 360 are not hypothetical. Many 360 operators and programmers commit the 
+errors referenced far too many times and suffer the consequences.</font></p>
+<p ALIGN="JUSTIFY"><font face="Times New Roman">When put into practice, the 
+suggestions contained in this paper-the new pronunciation, the &quot;ages,&quot; and the 
+keypunching method-eliminate the errors and confusion resulting from the 
+unplanned assignment of graphics for the six additional hex digits. </font></p>
+
+</body>
+
+</html>
